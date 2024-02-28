@@ -18,7 +18,7 @@ comprobar_sesion();
             echo "<p class='error'>Error de conexión con la base de datos</p>";
         }else{
             echo "<ul>";
-            foreach($categorias as "row") {
+            foreach($categorias as $row) {
                 $url = "productos.php?categorias=" .$row->categorias_id;
                 echo "<li><a href='$url'>" .$row->nombre."</a></li>";
             }

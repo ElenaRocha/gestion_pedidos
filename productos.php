@@ -12,7 +12,7 @@
     <body>
         <?php
         require 'cabecera.php';
-        $cat = cargar_categorias($_GET['categoria']);
+        $cat = cargar_categoria($_GET['categoria']);
         $productos = cargar_productos_categoria($_GET['categoria']);
         if($cat === FALSE or $productos === FALSE){
             echo "<p class='error'>Error al conetar</p>";

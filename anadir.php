@@ -1,6 +1,6 @@
 <?php
     require 'sesiones.php';
-    comprobar:sesion();
+    comprobar_sesion();
     $producto_id = $_POST['producto_id'];
     $cantidad = (int)$_POST['cantidad'];
     if(isset($_SESSION['carrito'][$producto_id])) {

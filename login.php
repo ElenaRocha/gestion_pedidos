@@ -10,7 +10,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 }else{
     session_start();
     $_SESSION['carrito'] = [];
-    foreeach($u as $resultado){
+    foreach($u as $resultado){
         $_SESSION['tienda_id'] = $resultado->tienda_id;
         $_SESSION['email'] = $resultado->email;
     }

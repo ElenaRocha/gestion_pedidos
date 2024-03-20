@@ -16,7 +16,7 @@
         </section>
         <section id="principal" style="display:none;">
             <header>
-                <?php require 'server_cabecera.php' ?>
+                <?php require 'server_cabecera.php'?>
             </header>
             <h2 id="titulo"></h2>
             <section id="contenido">
